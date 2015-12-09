@@ -41,3 +41,9 @@ Middle End
 Front end
  - Do preloading lazily when system is more idle [mdn](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ)
    - Requires that the resource being requested has caching header
+ - Lazy loading
+   - Create a script tag and add it to markup dynamically
+   - [LabJS](https://github.com/getify/LABjs)
+ - Parallel loading
+   - Load ALL scripts dynamically and preserve execution order
+   - Set async attribute to false (download in parallel, execute in order)
