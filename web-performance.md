@@ -40,3 +40,4 @@ Middle End
 
 Front end
  - Do preloading lazily when system is more idle [mdn](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ)
+   - Requires that the resource being requested has caching header
