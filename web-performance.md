@@ -37,3 +37,6 @@ Middle End
 - Back end as a black box state machine
 - Front end as a data presenter
 - Stateless data validation done on a client-side server (e.g. email accuracy)
+
+Front end
+ - Do preloading lazily when system is more idle (mdn)[https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ]
