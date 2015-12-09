@@ -39,4 +39,4 @@ Middle End
 - Stateless data validation done on a client-side server (e.g. email accuracy)
 
 Front end
- - Do preloading lazily when system is more idle (mdn)[https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ]
+ - Do preloading lazily when system is more idle [mdn](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ)
