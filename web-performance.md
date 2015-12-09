@@ -1,8 +1,7 @@
-http://shop.oreilly.com/product/0636920016038.do
-AUTHD
+- http://shop.oreilly.com/product/0636920016038.do AUTHD
 
-http://whichloadsfaster.zomdir.com/
-webpagetest.org
+- http://whichloadsfaster.zomdir.com/
+- http://webpagetest.org
 
 Choices
 - Measurement of Statistics
@@ -33,4 +32,4 @@ Minification
   - http://compressorrater.thruhere.net/
   
 Middle End
-http://middleend.com
+- http://middleend.com
