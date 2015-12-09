@@ -36,4 +36,3 @@ Middle End
 - Middle end buffers back end and front end
 - Back end as a black box state machine
 - Front end as a data presenter
-- 
