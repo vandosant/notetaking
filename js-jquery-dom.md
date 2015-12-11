@@ -4,3 +4,12 @@ Setup
 - Install NodeJS from http://nodejs.org/
 - https://docs.npmjs.com/getting-started/fixing-npm-permissions
 - npm install http-server -g
+
+Basics
+ - Everything is a pointer.
+ - The delete keyword does not remove objects from memory. its primary use is to de-reference objects.
+ - Useful when you want to remove references to object properties.
+ - The return val of delete tells you whether your syntax was correct.
+ - typeof Null = "object" (wrapped in an obj in memory)
+ - typeof NaN = "number"
+ - typeof Array = "object" (wrapped in an obj in memory)
