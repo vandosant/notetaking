@@ -50,4 +50,5 @@ Front end
    - Set async attribute to false (download in parallel, execute in order)
  - UI Thread
    - Single threaded
-   - 
+   - https://github.com/IntelLabs/RiverTrail
+   - https://github.com/mdn/simple-web-worker
