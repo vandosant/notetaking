@@ -1,3 +1,4 @@
+### Notes From [Frontend Masters Website Performance](https://frontendmasters.com/courses/website-performance)
 - http://shop.oreilly.com/product/0636920016038.do AUTHD
 
 - http://whichloadsfaster.zomdir.com/
@@ -47,3 +48,6 @@ Front end
  - Parallel loading
    - Load ALL scripts dynamically and preserve execution order
    - Set async attribute to false (download in parallel, execute in order)
+ - UI Thread
+   - Single threaded
+   - 
