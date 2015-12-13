@@ -15,3 +15,4 @@ Basics
  - typeof Array = "object" (wrapped in an obj in memory)
  - Primitives as args to functions are copied into the function scope.
  - Objects as args to functions are passed as references to the function scope.
+ - Object __proto__ points to whatever it is linked to. var x = Object.create(null); console.log(x.__proto__); // undefined
