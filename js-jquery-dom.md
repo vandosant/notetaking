@@ -13,3 +13,5 @@ Basics
  - typeof Null = "object" (wrapped in an obj in memory)
  - typeof NaN = "number"
  - typeof Array = "object" (wrapped in an obj in memory)
+ - Primitives as args to functions are copied into the function scope.
+ - Objects as args to functions are passed as references to the function scope.
