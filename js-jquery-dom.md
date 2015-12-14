@@ -16,3 +16,7 @@ Basics
  - Primitives as args to functions are copied into the function scope.
  - Objects as args to functions are passed as references to the function scope.
  - Object __proto__ points to whatever it is linked to. var x = Object.create(null); console.log(x.__proto__); // undefined
+ - Context setting rules:
+   - Call with the dot operator (object.property)
+   - Use call or apply functions
+   - Invoke the new keyword (creates a new object with __proto__ linked to the constructor prototype, and invokes apply against the constructor with passed args).
