@@ -19,4 +19,4 @@ Basics
  - Context setting rules:
    - Call with the dot operator (object.property)
    - Use call or apply functions
-   - Invoke the new keyword (creates a new object with __proto__ linked to the constructor prototype, and invokes apply against the constructor with passed args).
+   - Invoke the new keyword (creates a new object with __proto__ linked to the constructor prototype, and invokes the constructor with new object as context and the passed args, then returns the new object).
