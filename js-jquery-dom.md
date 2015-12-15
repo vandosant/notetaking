@@ -20,3 +20,6 @@ Basics
    - Call with the dot operator (object.property)
    - Use call or apply functions
    - Invoke the new keyword (creates a new object with __proto__ linked to the constructor prototype, and invokes the constructor with new object as context and the passed args, then returns the any returned from the constructor or the new object).
+Type Checking
+ - built-ins are typeof and instanceof
+ - jQuery uses Object.prototype.toString.call(obj)
