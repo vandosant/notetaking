@@ -13,3 +13,10 @@ Resources:
     1. No ability to self-reference
     2. Nothing to reference in debugging
     3. Less self-documentation
+
+Scope
+- Lexical scoping by default
+- `catch` / `try` is block scoped
+- `eval` modifies existing lexical scope
+- `with` creates a lexical scope at runtime
+- Let creates block scope
