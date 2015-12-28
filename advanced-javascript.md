@@ -7,7 +7,7 @@ Resources:
 [Spec Proposals](http://wiki.ecmascript.org/doku.php?id=harmony:proposals)  
 
 - Function declarations start with the function keyword
-- else it is a function expression, eg var foo = function bar() {}
+- else it is a function expression, eg `var foo = function bar() {}`
 - Function expression variable declarations are enclosed in their own scope
 - Anonymous function expression negatives
     1. No ability to self-reference
@@ -19,4 +19,4 @@ Scope
 - `catch` / `try` is block scoped
 - `eval` modifies existing lexical scope
 - `with` creates a lexical scope at runtime
-- Let creates block scope
+- `let` creates block scope `for (let i = 0; i < bar.length; i++)`
