@@ -20,3 +20,7 @@ Scope
 - `eval` modifies existing lexical scope
 - `with` creates a lexical scope at runtime
 - `let` creates block scope `for (let i = 0; i < bar.length; i++)`
+
+Hoisting
+- Variable declarations are moved to the top
+- In reality variables are being declared at compilation
