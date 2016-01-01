@@ -24,3 +24,4 @@ Scope
 Hoisting
 - Variable declarations are moved to the top
 - In reality variables are being declared at compilation
+- Functions are hoisted above variables
