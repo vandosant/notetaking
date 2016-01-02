@@ -46,3 +46,8 @@ Only the call site matters
   2. Created object is linked to a different object
   3. Created object is bound as `this` for function
   4. Implicitly insert `return this` if there is not a return value
+
+1. Is there a `new` keyword?
+2. Is call or apply used (also bind)
+3. Is there an owning or containing object?
+4. Default binding
