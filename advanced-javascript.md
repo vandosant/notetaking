@@ -27,7 +27,7 @@ Hoisting
 - Functions are hoisted above variables
 
 `this`
-- Only the call site matters
+*** Only the call site matters
 1. Default binding
   - Normal function call / IIFE `foo()`
 2. Implicit binding
