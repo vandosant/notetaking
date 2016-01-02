@@ -28,6 +28,7 @@ Hoisting
 
 ### `this`
 Only the call site matters
+
 1. Default binding
   - Normal function call / IIFE `foo()`
 2. Implicit binding
