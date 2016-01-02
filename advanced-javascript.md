@@ -25,3 +25,12 @@ Hoisting
 - Variable declarations are moved to the top
 - In reality variables are being declared at compilation
 - Functions are hoisted above variables
+
+`this`
+- Only the call site matters
+1. Default binding
+  - Normal function call / IIFE `foo()`
+2. Implicit binding
+  - Object property reference `o2.foo()`
+3. Explicit binding
+  - Call or apply utility functions `foo.call(o3)`
