@@ -39,6 +39,7 @@ Only the call site matters
     - `function foo() { console.log(this.bar); };`
     - `var orig = foo;`
     - `foo = function() { orig.call(obj); };`
+    - AKA `bind` utility from ES5
 4. `new` constructor binding
   - Modification to the way function is being called `new foo()`
   1. New object is created*
