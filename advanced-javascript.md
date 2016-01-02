@@ -34,7 +34,13 @@ Hoisting
   - Object property reference `o2.foo()`
 3. Explicit binding
   - Call or apply utility functions `foo.call(o3)`
-- Hard binding
-  - `function foo() { console.log(this.bar); };`
-  - `var orig = foo;`
-  - `foo = function() { orig.call(obj); };`
+  - Hard binding
+    - `function foo() { console.log(this.bar); };`
+    - `var orig = foo;`
+    - `foo = function() { orig.call(obj); };`
+4. `new` constructor binding
+  - Modification to the way function is being called `new foo()`
+  1. New object is created*
+  2. Created object is linked to a different object
+  3. Created object is bound as `this` for function
+  4. Implicitly insert `return this` if there is not a return value
