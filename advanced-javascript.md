@@ -26,7 +26,7 @@ Hoisting
 - In reality variables are being declared at compilation
 - Functions are hoisted above variables
 
-`this`
+### `this`
 Only the call site matters
 1. Default binding
   - Normal function call / IIFE `foo()`
