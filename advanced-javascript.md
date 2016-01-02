@@ -34,3 +34,7 @@ Hoisting
   - Object property reference `o2.foo()`
 3. Explicit binding
   - Call or apply utility functions `foo.call(o3)`
+- Hard binding
+  - `function foo() { console.log(this.bar); };`
+  - `var orig = foo;`
+  - `foo = function() { orig.call(obj); };`
