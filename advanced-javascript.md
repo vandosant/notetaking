@@ -51,3 +51,6 @@ Only the call site matters
 2. Is call or apply used (also bind)
 3. Is there an owning or containing object?
 4. Default binding
+
+### Closure
+- Ability of a function to access lexical scope even when it is executed outside of that scope
