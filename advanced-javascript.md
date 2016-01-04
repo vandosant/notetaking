@@ -54,3 +54,10 @@ Only the call site matters
 
 ### Closure
 - Ability of a function to access lexical scope even when it is executed outside of that scope
+
+### Prototype
+- [[Prototype]] is a delegation chain for properties on objects
+- Lookup done with:
+1. `__proto__` (public, non-standardized property)
+2. `Object.getPrototypeOf()` (es5 standardized utility)
+3. `obj.constructor.prototype` (property implemented pre ie 9) **referencing non-special and writeable properties**
