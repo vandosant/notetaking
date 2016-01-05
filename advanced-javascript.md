@@ -54,6 +54,7 @@ Only the call site matters
 
 ### Closure
 - Ability of a function to access lexical scope even when it is executed outside of that scope
+- Module pattern works well for this -- A function when executed returns another function or group of functions that encapsulate the parent lexical scope.
 
 ### Prototype
 - [[Prototype]] is a delegation chain for properties on objects
