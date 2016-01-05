@@ -56,11 +56,16 @@ Only the call site matters
 - Ability of a function to access lexical scope even when it is executed outside of that scope
 - Module pattern works well for this -- A function when executed returns another function or group of functions that encapsulate the parent lexical scope.
 
-### Prototype
+### Prototype Delegation
 - [[Prototype]] is a delegation chain for properties on objects
+- Opposite from classes where behavior is copied down -> Objects are linked to a prototype and behavior is delegated of the chain
 - Lookup done with:
 1. `__proto__` (public, non-standardized property)
 2. `Object.getPrototypeOf()` (es5 standardized utility)
 3. `obj.constructor.prototype` (property implemented pre ie 9) **referencing non-special and writeable properties**
+- Any properties that are not found on current object are delegated up the chain, all the way to Object.prototype
 - Bind properties to `this`
 - Use `var self = this` / context, / that, when using event handlers
+
+### OLOO
+- Replace `new` with `Object.create(obj.prototype)`
