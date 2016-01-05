@@ -56,6 +56,9 @@ Only the call site matters
 - Ability of a function to access lexical scope even when it is executed outside of that scope
 - Module pattern works well for this -- A function when executed returns another function or group of functions that encapsulate the parent lexical scope.
 
+### Delegation
+- Live linkage at runtime between objects
+
 ### Prototype Delegation
 - [[Prototype]] is a delegation chain for properties on objects
 - Opposite from classes where behavior is copied down -> Objects are linked to a prototype and behavior is delegated of the chain
@@ -67,5 +70,6 @@ Only the call site matters
 - Bind properties to `this`
 - Use `var self = this` / context, / that, when using event handlers
 
-### OLOO
+### OLOO Delegation
 - Replace `new` with `Object.create(obj.prototype)`
+- Useful when you need to create multiple instances
