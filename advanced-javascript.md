@@ -61,3 +61,5 @@ Only the call site matters
 1. `__proto__` (public, non-standardized property)
 2. `Object.getPrototypeOf()` (es5 standardized utility)
 3. `obj.constructor.prototype` (property implemented pre ie 9) **referencing non-special and writeable properties**
+- Bind properties to `this`
+- Use `var self = this` / context, / that, when using event handlers
