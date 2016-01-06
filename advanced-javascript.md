@@ -1,6 +1,6 @@
 ### Notes From Frontend Masters [Advanced JavaScript](https://frontendmasters.com/courses/advanced-javascript/)
 
-Resources:  
+### Resources
 [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
 [Style Guide](https://github.com/rwaldron/idiomatic.js/)  
 [Spec](http://www.ecma-international.org/publications/standards/Ecma-262.htm)  
@@ -14,14 +14,14 @@ Resources:
     2. Nothing to reference in debugging
     3. Less self-documentation
 
-Scope
+### Scope
 - Lexical scoping by default
 - `catch` / `try` is block scoped
 - `eval` modifies existing lexical scope
 - `with` creates a lexical scope at runtime
 - `let` creates block scope `for (let i = 0; i < bar.length; i++)`
 
-Hoisting
+### Hoisting
 - Variable declarations are moved to the top
 - In reality variables are being declared at compilation
 - Functions are hoisted above variables
