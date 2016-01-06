@@ -10,6 +10,7 @@
 - What the code does is irrelevant
 - How the code is stuctured is what makes it testable
 - Ask for fundamentally required items in the constructor
+- Separate out business logic
 
 ### Stages
 1. Integration / Scenario
