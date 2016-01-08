@@ -23,3 +23,9 @@
 - `...` before an array
 - `var a = [1,2,3];`
 - `console.log(...a); // 1 2 3`
+
+### Destructuring
+- `let {name, email} = getUser();`
+- `console.log(name, email);`
+- `let {name: n, email: e} = getUser();`
+- `console.log(n, e);`
