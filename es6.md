@@ -11,3 +11,15 @@
 ### Tail calls
 - [Babeldocs#tail-calls](https://babeljs.io/docs/learn-es2015/#tail-calls)
 - Calls in tail-position do not grow the stack infinitely.
+
+### Rest Params
+- `function yello(...bar){ console.log(bar); console.log(typeof(bar) === 'array')};`
+- 1 per function
+- Must be last param
+- Can't use default arguments anymore
+- Cannot give rest param a default value
+
+### Spread
+- `...` before an array
+- `var a = [1,2,3];`
+- `console.log(...a); // 1 2 3`
