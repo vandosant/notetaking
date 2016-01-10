@@ -34,6 +34,6 @@
 - `function displayUser({name, email}){};`
 - `function displayUser({name = "None provided", email = "None provided"}){};`
 - With arrays
-- var nums = [1,2,3,4,5,6,7,8,9,10];
-- var [first, second,,,fifth] = nums;
-- console.log(first, second, fifth);
+- `var nums = [1,2,3,4,5,6,7,8,9,10];`
+- `var [first, second,,,fifth] = nums;`
+- `console.log(first, second, fifth);`
