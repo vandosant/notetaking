@@ -25,6 +25,7 @@
 - `console.log(...a); // 1 2 3`
 
 ### Destructuring
+- With objects
 - `let {name, email} = getUser();`
 - `console.log(name, email);`
 - `let {name: n, email: e} = getUser();`
