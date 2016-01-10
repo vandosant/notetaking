@@ -29,3 +29,7 @@
 - `console.log(name, email);`
 - `let {name: n, email: e} = getUser();`
 - `console.log(n, e);`
+- With functions
+- `var user = {name: 'x', email: 'y'}; displayUser(user);`
+- `function displayUser({name, email}){};`
+- `function displayUser({name = "None provided", email = "None provided"}){};`
