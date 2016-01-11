@@ -76,3 +76,32 @@ console.log(m.isSeniorCitizen);
 m['nickname'] = "Marzy";
 console.log(m.nickname);
 ```
+### Collections
+Sets
+```javascript
+var set = new Set();
+set.add(1);
+set.add(2);
+set.add(2);
+for (let num of set) {
+  console.log(num); // 1 2
+}
+console.log(set.size) // 2
+set.clear();
+console.log(set.size); // 0
+```
+Map
+```javascript
+var map = new Map();
+map.set('name', 'Scott');
+map.get('name'); // Scott
+map.has('name') // true
+
+// objects as keys
+var user1 = {name: 'Scott', id: 123};
+map.set(user1, "yo");
+console.log(map.get(user1));
+
+map.entries(); // MapIterator
+map.size // 2
+```
