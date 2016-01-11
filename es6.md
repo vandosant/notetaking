@@ -44,3 +44,31 @@
 - () => 2; // () => return 2;
 - x => {}; // (x) => {};
 - gives lexical binding of this, so cannot use in a constructor call
+- always anonymous
+
+
+### Default parameters
+- function(a = 3) {}
+- function(a = getNum()) {}
+
+### Classes
+- Safety school proposal in ES6
+- class Foo{};
+`
+var maryAge = Symbol();
+class Mary{
+  constructor(age, health) {
+    this.health = health;
+    this[maryAge] = age;
+  }
+  
+  get isSeniorCitizen() {
+    return this[maryAge] > 65;
+  }
+};
+
+var m = new Mary(88, 7);
+console.log(m[maryAge]);
+console.log(m.isSeniorCitizen);
+m['nickname'] = "Marzy";
+console.log(m.nickname);`
