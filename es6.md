@@ -105,3 +105,12 @@ console.log(map.get(user1));
 map.entries(); // MapIterator
 map.size // 2
 ```
+WeakMap
+- Weak reference to a key; reference is released if it is the only object holding onto it.
+```javascript
+var weak = new WeakMap();
+
+weak.set({name: 'Scott'}, 123);
+weak.get('name');
+weak.size; // undefined
+```
