@@ -9,7 +9,7 @@
 - Must have a type that is not undefined (recommend strings)
 - Ex. counter has types "INCREMENT" and "DECREMENT"
 
-* Pure functions 
+### Pure functions 
 - do not change or modify arguments
 - generate result solely using the passed arguments
 - product the same result every time
