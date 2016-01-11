@@ -114,3 +114,38 @@ weak.set({name: 'Scott'}, 123);
 weak.get('name');
 weak.size; // undefined
 ```
+
+### Promiess
+
+
+### Generators
+```javascript
+function *three() {
+  yield 1;
+  yield 2;
+  return 3;
+}
+
+var gen = three();
+gen.next(); // {value: 1, done: false}
+gen.next(); // {value: 2, done: false}
+gen.next(); // {value: 3, done: true}
+gen.next(); // {value: undefined, done: true}
+
+
+for (let v of three()) {
+  console.log(v); // 1 2
+}
+
+function *foo(x) {
+  var y = 2 + (yield (x + 1));
+  var z = yield (y * 2);
+  console.log(z, y, x)
+  return x + y + z;
+}
+
+var gen = foo(5);
+gen.next();
+gen.next(3); // value:6
+console.log(gen.next(6)); // value: 16
+```
