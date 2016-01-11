@@ -67,6 +67,10 @@ class Mary{
   }
 };
 
+// export Mary
+
+// somewhere else,
+// import Mary
 var m = new Mary(88, 7);
 console.log(m[maryAge]);
 console.log(m.isSeniorCitizen);
