@@ -54,7 +54,8 @@
 ### Classes
 - Safety school proposal in ES6
 - class Foo{};
-`var maryAge = Symbol();
+```javascript
+var maryAge = Symbol();
 class Mary{
   constructor(age, health) {
     this.health = health;
@@ -70,4 +71,5 @@ var m = new Mary(88, 7);
 console.log(m[maryAge]);
 console.log(m.isSeniorCitizen);
 m['nickname'] = "Marzy";
-console.log(m.nickname);`
+console.log(m.nickname);
+```
