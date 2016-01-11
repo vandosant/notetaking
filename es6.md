@@ -66,7 +66,6 @@ class Mary{
     return this[maryAge] > 65;
   }
 };
-
 // export Mary
 
 // somewhere else,
