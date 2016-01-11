@@ -115,7 +115,7 @@ weak.get('name');
 weak.size; // undefined
 ```
 
-### Promiess
+### Promises
 
 
 ### Generators
