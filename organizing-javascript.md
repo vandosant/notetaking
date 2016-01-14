@@ -22,4 +22,4 @@
 - Handle default route; 404 response
 #### Processing
 - Use a loop or a generator function to run through all routing functions with each request
-- Take generator and automatically run to completion (Asynquence)[https://github.com/getify/asynquence]
+- Take generator and automatically run to completion [Asynquence](https://github.com/getify/asynquence)
