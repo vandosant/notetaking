@@ -32,4 +32,4 @@
   - UMD
   - Commonjs // use module bundler
   - AMD // use module bundler
-- Add new route for Foo api // "/Foo" invokes and uses Foo module, returns json
+- Add new route for Foo api // `"/Foo"` invokes and uses Foo module, returns json
