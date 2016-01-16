@@ -24,3 +24,12 @@
 #### Processing
 - Use a loop or a generator function to run through all routing functions with each request
 - Take generator and automatically run to completion // [Asynquence](https://github.com/getify/asynquence); react function
+
+### Modules
+- Hybrid server/browser code
+- Add to `global.Foo = 'Foo.js' // with some require method` in node server
+- Require methods
+  - UMD
+  - Commonjs // use module bundler
+  - AMD // use module bundler
+- Add new route for Foo api // "/Foo" invokes and uses Foo module, returns json
