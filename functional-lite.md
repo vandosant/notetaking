@@ -21,3 +21,9 @@ z; // 17
 
 // pure method
 sum(multiply(3,4),5); // 17
+
+// manual composition
+function multAndSum(x,y,z) {
+  return sum( multiply(x,y), z);
+};
+multAndSum(3,4,5); // 17
