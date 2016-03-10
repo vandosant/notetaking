@@ -14,5 +14,10 @@ Notes from [Functional lite js](https://frontendmasters.com/courses/functional-j
 function sum(x,y) { return x + y };
 function multiply(x,y) { return x * y };
 
+// stateful method
 var z = multiply(3,4);
-z = sum(z,5) // 17
+z = sum(z,5);
+z; // 17
+
+// pure method
+sum(multiply(3,4),5); // 17
