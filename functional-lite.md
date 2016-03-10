@@ -8,6 +8,7 @@ Notes from [Functional lite js](https://frontendmasters.com/courses/functional-j
 - Perform required operation(s)
 - Encapsulate and return observed end state
 - From the outside, now the operation is pure (can call with same input and get same output)
+
 ### Composition
 - Functions calling and returning other functions
 ```javascript
