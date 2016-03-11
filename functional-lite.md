@@ -64,3 +64,9 @@ mult(3,4,5);	// 60
 
 mult(3,4,5,6);	// Oops!
 ```
+
+### List Operations
+- Transformation (map): returns 1:1 mapping of the list with the transform applied to each element
+- Exclusion (filter): Predicate returns true to keep, false to discard
+- Composition (reduce): Fully or partially apply an operation to a list and value (accumulator) and return the output as applied to the value
+  - Partial application: Uniques -- initial accumulator of an empty list[] that collects unique list values
