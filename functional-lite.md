@@ -28,3 +28,8 @@ function multAndSum(x,y,z) {
   return sum( multiply(x,y), z);
 };
 multAndSum(3,4,5); // 17
+```
+
+### Closure
+- When a function "remembers" variables within its scope and can reference them after being invoked
+- AKA Currying and partial application
