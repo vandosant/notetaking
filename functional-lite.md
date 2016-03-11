@@ -33,3 +33,15 @@ multAndSum(3,4,5); // 17
 ### Closure
 - When a function "remembers" variables within its scope and can reference them after being invoked
 - AKA Currying and partial application
+```javascript
+function foo(x,y) {
+  return function() {
+    return x + y;
+  }
+}
+
+var x = foo(3,4);
+
+x();	// 7
+x();	// 7
+```
