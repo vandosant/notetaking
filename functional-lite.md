@@ -45,3 +45,10 @@ var x = foo(3,4);
 x();	// 7
 x();	// 7
 ```
+
+### Recursion
+- A function that calls itself until a base case is reached
+- Assumes unlimited CPU and memory
+- Each recursive call invokes another stackframe, which is thrown away when the call finishes
+- Modern browsers have limits of 10-20K stackframes allocated
+- Tail-call optimization: If function call is last and returns the result, current stackframe can be discarded
