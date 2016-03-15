@@ -76,6 +76,7 @@ mult(3,4,5,6);	// Oops!
 
 - Create a function that accepts an arbitrary list of values and adds them up
 ```javascript
+// functions as args
 function foo(x) {
   return function() {
     return x
@@ -99,4 +100,29 @@ function addN(args) {
 }
 
 console.log(addN([foo(42), foo(10)]));
+
+// values as args
+function foo(x) {
+  return function() {
+    return x
+  };
+}
+
+function add(x, y) {
+  return x + y;
+}
+
+function add2(f1, f2) {
+  return add(f1(),f2());
+}
+
+function addN(args) {
+  var result = 0;
+  for (var i = 0; i < args.length; i++) {
+    result = add2(foo(result), foo(args[i]))
+  }
+  return result
+}
+
+console.log(addN([42,11,88]));
 ```
