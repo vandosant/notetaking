@@ -153,3 +153,28 @@ function addN(args) {
 
 console.log(addN([42,12,88]));
 ```
+```javascript
+// recursively (tail call optimized)
+function foo(x) {
+  return function () {
+    return x
+  };
+}
+
+function add(x, y) {
+  return x + y;
+}
+
+function add2(f1, f2) {
+  return add(f1(), f2());
+}
+
+function addN(args) {
+  if (args.length == 2) {
+    return add2(foo(args[0]), foo(args[1]))
+  }
+  return addN([add2(foo(args[0]), foo(args[1]))].concat(args.slice(2)))
+}
+
+console.log(addN([42, 12, 88, 99]));
+```
