@@ -100,7 +100,8 @@ function addN(args) {
 }
 
 console.log(addN([foo(42), foo(10)]));
-
+```
+```javascript
 // values as args
 function foo(x) {
   return function() {
@@ -125,7 +126,8 @@ function addN(args) {
 }
 
 console.log(addN([42,11,88]));
-
+```
+```javascript
 // recursively
 function foo(x) {
   return function() {
