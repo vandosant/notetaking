@@ -125,4 +125,29 @@ function addN(args) {
 }
 
 console.log(addN([42,11,88]));
+
+// recursively
+function foo(x) {
+  return function() {
+    return x
+  };
+}
+
+function add(x, y) {
+  return x + y;
+}
+
+function add2(f1, f2) {
+  return add(f1(),f2());
+}
+
+function addN(args) {
+  if (args.length === 2) {
+    return add2(foo(args[0]), foo(args[1]))
+  }
+
+  return args[0] + addN(args.slice(1));
+}
+
+console.log(addN([42,12,88]));
 ```
