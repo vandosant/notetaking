@@ -71,3 +71,32 @@ mult(3,4,5,6);	// Oops!
 - Composition (reduce): Fully or partially apply an operation to a list and value (accumulator) and return the output as applied to the value
   - Partial application: Uniques -- initial accumulator of an empty list[] that collects unique list values
 - Iteration (forEach): Useful when you intend to produce some side effects, such as logging values
+
+### Exercise
+
+- Create a function that accepts an arbitrary list of values and adds them up
+```javascript
+function foo(x) {
+  return function() {
+    return x
+  };
+}
+
+function add(x, y) {
+  return x + y;
+}
+
+function add2(f1, f2) {
+  return add(f1(),f2());
+}
+
+function addN(args) {
+  var result = 0;
+  for (var i = 0; i < args.length; i++) {
+    result = add2(foo(result),args[i])
+  }
+  return result
+}
+
+console.log(addN([foo(42), foo(10)]));
+```
