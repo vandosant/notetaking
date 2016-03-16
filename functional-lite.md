@@ -178,3 +178,30 @@ function addN(args) {
 
 console.log(addN([42, 12, 88, 99]));
 ```
+```javascript
+// with map & reduce
+function foo(x) {
+  return function () {
+    return x
+  };
+}
+
+function add(x, y) {
+  return x + y;
+}
+
+function add2(f1, f2) {
+  return add(f1(), f2());
+}
+
+function addN(args) {
+  var foos = args.map(foo);
+  return foos.slice(1).reduce(function (acc, next) {
+    return function () {
+      return add2(acc, next)
+    }
+  }, foos[0])()
+}
+
+console.log(addN([42, 12, 88]));
+```
