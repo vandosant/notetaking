@@ -74,7 +74,8 @@ mult(3,4,5,6);	// Oops!
 
 ### Exercise
 
-- Create a function that accepts an arbitrary list of values and adds them up
+- Create a function that accepts an arbitrary list of values and adds them up  
+
 ######With a for-loop
 ```javascript
 // functions as args
