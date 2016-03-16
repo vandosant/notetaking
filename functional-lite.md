@@ -209,3 +209,39 @@ function addN(args) {
 
 console.log(addN([42, 12, 88]));
 ```
+```javascript
+// with a filter
+function foo(x) {
+  return function () {
+    return x
+  };
+}
+
+function add(x, y) {
+  return x + y;
+}
+
+function add2(f1, f2) {
+  return add(f1(), f2());
+}
+
+function addN(args) {
+  return args.slice(1).reduce(function (acc, next) {
+    return function () {
+      return add2(acc, next)
+    }
+  }, args[0])()
+}
+
+function isOdd(x) {
+  return x % 2 == 1;
+}
+function isEven(x) {
+  return composeNeg(isOdd(x));
+}
+function composeNeg(x) {
+  return !x
+}
+
+console.log(addN([2, 3, 6, 7].filter(isEven).map(foo)));
+```
