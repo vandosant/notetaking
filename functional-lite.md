@@ -75,6 +75,7 @@ mult(3,4,5,6);	// Oops!
 ### Exercise
 
 - Create a function that accepts an arbitrary list of values and adds them up
+With a for-loop
 ```javascript
 // functions as args
 function foo(x) {
@@ -127,6 +128,7 @@ function addN(args) {
 
 console.log(addN([42,11,88]));
 ```
+With Recursion
 ```javascript
 // recursively
 function foo(x) {
@@ -178,6 +180,7 @@ function addN(args) {
 
 console.log(addN([42, 12, 88, 99]));
 ```
+With List Operations
 ```javascript
 // with map & reduce
 function foo(x) {
