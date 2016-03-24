@@ -2,3 +2,11 @@
 - Render method must return a component and (ideally) be pure (not changing variables)
 - Linting: npm standard, then cli run standard; editorconfig.org
 - Tree shaking: rollup.js, webpack
+- `webpack file output`
+- Babel 6 config
+  - Create .babelrc
+  - JSON syntax
+  - Include presets
+  - In production, include only individually, not all es2015 (e.g. disclude generators)
+  - npm babel-preset-es2015
+  - "presets": ["es2015"]
