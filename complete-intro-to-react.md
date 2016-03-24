@@ -1,1 +1,2 @@
-Code organization: https://github.com/reactjs/react-router
+- Code organization: https://github.com/reactjs/react-router
+- Render method must return a component
