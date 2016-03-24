@@ -1,2 +1,3 @@
 - Code organization: https://github.com/reactjs/react-router
 - Render method must return a component and (ideally) be pure (not changing variables)
+- Linting: npm standard, then cli run standard
