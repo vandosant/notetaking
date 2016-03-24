@@ -3,6 +3,7 @@
 - Linting: npm standard, then cli run standard; editorconfig.org
 - Tree shaking: rollup.js, webpack
 - `webpack file output`
+- `ls -lsa` checks file sizes
 - Babel 6 config
   - Create .babelrc
   - JSON syntax
@@ -10,3 +11,34 @@
   - In production, include only individually, not all es2015 (e.g. disclude generators)
   - npm babel-preset-es2015
   - "presets": ["es2015"]
+  - With webpack, add babel-loader `webpack --module-bind 'js=babel'`
+- Webpack config
+```js
+const path = require('path')
+
+module.exports = {
+  context: __dirname, // provided by node
+  entry: './js/ClientApp.js',
+  output: {
+    path: path.join(__dirname, '/public'),
+    filename: 'bundle.js'
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx', '.json'] // find require paths without extensions
+  },
+  stats: {
+    colors: true,
+    reasons: true, // verbose errors
+    chunks: false
+  },
+  module: {
+    loaders: [ // build pipeline
+      {
+        test: /\.jsx?$/,
+        loader: 'babel-loader'
+      }
+    ]
+  }
+}
+```
+- http://regexr.com/
