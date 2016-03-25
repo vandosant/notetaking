@@ -55,3 +55,7 @@ module.exports = {
     - `wrapper.debug`
   - mount: similar to shallow with things like event simulation
   - static rendering: uses jsdom and cheerio to create a more realistic browser env
+- coverage
+  - istanbul
+  - `nyc --reporter=lcov --reporter=text --reporter=html --require babel-register --extension .jsx npm test`
+  - `open coverage/index.html`
