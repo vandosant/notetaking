@@ -42,3 +42,10 @@ module.exports = {
 }
 ```
 - http://regexr.com/
+
+#### Unit testing
+- Chai for assertions, mocha to run, enzyme for helpers
+- react-addons-test-utils from facebook (enzyme dependency)
+- /test directory (required by mocha)
+- (alternative assertions) power assert, should
+- `mocha --require test/helpers/setup.js`
