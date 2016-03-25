@@ -77,7 +77,7 @@ module.exports = {
   - single data store
 
 - redux
-  - "flux for multiple stores"
+  - "flux middleware for multiple stores"
   - can hit critical mass at ~10 stores
   - instead of a whole new store, you add a new property to a store
   - emit an action
