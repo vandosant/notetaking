@@ -64,3 +64,24 @@ module.exports = {
 - hot reloading
   - live reload for css
   - does not work for stateless functional components
+
+- flux
+  - elm: simplified version of flux
+  - port of elm architecture into javascript
+  - one way data flow (props down)
+  - upward event flow (actions up)
+  - dispatcher: function that delegates actions to another function
+  - delegated function updates the store
+  - store updates the view
+  - makes it easier to follow actions and their outcomes around
+  - single data store
+
+- redux
+  - "flux for multiple stores"
+  - can hit critical mass at ~10 stores
+  - instead of a whole new store, you add a new property to a store
+  - emit an action
+  - action gets called to the root reducer
+  - root reducer dispatches to smaller reducers
+  - "reducers all the way down"
+  - reducers: takes one state, returns a new state, without modifying original state
