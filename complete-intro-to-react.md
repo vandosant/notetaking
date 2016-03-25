@@ -53,3 +53,5 @@ module.exports = {
   - shallow: only render given component, not the children
     - `var wrapper = shallow(<Component />)`
     - `wrapper.debug`
+  - mount: similar to shallow with things like event simulation
+  - static rendering: uses jsdom and cheerio to create a more realistic browser env
