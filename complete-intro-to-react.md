@@ -49,3 +49,7 @@ module.exports = {
 - /test directory (required by mocha)
 - (alternative assertions) power assert, should
 - `mocha --require test/helpers/setup.js`
+- enzyme
+  - shallow: only render given component, not the children
+    - `var wrapper = shallow(<Component />)`
+    - `wrapper.debug`
