@@ -60,3 +60,7 @@ module.exports = {
   - `npm install -g nyc`
   - `nyc --reporter=lcov --reporter=text --reporter=html --require babel-register --extension .jsx npm test`
   - `open coverage/index.html`
+
+- hot reloading
+  - live reload for css
+  - does not work for stateless functional components
