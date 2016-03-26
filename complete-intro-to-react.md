@@ -90,8 +90,11 @@ module.exports = {
   - chrome extensions:
     - react devtools
       - check 'allow access to file urls'
+      - $r to get selected element in console
     - redux devtools
       - needs middleware (redux.compose)
       - needs initial state
       - needs http-server
       - `const store = redux.createStore(rootReducer, initialState, redux.compose)`
+      - `http-server -p 8080 ./`
+      - log monitor for time travel
