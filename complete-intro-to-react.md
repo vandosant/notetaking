@@ -85,3 +85,12 @@ module.exports = {
   - root reducer dispatches to smaller reducers
   - "reducers all the way down"
   - reducers: takes one state, returns a new state, without modifying original state
+
+- devtools
+  - chrome extensions:
+    - react devtools
+      - check 'allow access to file urls'
+    - redux devtools
+      - needs middleware (redux.compose)
+      - needs initial state
+      - `const store = redux.createStore(rootReducer, initialState, redux.compose)`
