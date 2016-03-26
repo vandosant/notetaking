@@ -93,4 +93,5 @@ module.exports = {
     - redux devtools
       - needs middleware (redux.compose)
       - needs initial state
+      - needs http-server
       - `const store = redux.createStore(rootReducer, initialState, redux.compose)`
