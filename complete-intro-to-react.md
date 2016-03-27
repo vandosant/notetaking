@@ -101,3 +101,7 @@ module.exports = {
 
 - universal rendering
   - externalize state
+  - externalize routes
+  - underscore templating
+  - render react to string via node with react-dom/server
+  - node app.js
