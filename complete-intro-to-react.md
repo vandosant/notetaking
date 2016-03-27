@@ -98,3 +98,6 @@ module.exports = {
       - `const store = redux.createStore(rootReducer, initialState, redux.compose)`
       - `http-server -p 8080 ./`
       - log monitor for time travel
+
+- universal rendering
+  - externalize state
