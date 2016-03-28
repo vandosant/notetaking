@@ -105,3 +105,10 @@ module.exports = {
   - underscore templating
   - render react to string via node with react-dom/server
   - node app.js
+
+- webpack chunking
+  - `output: { publicPath: '/public/' }`
+  - `stats: {chunks: true}`
+  - `npm install node-ensure`
+  - make routing async
+  - set root route with a config object
