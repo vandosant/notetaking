@@ -10,3 +10,9 @@
 - O(n^2): loop within a loop
 - O(1): no loops, just return something (constant time)
 - O(log n): divide an conquer strategy (recursion), time diminishes per input as input grows
+- [big o cheatsheet](http://bigocheatsheet.com)
+
+### Sorting
+- Bubble sort: useful to understand sorting, but very slow O(n^2)
+  - Loop over the list until there are no more variables to swap
+- Insertion sort: useful for arrays that are already close to being sorted
