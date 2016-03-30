@@ -16,3 +16,4 @@
 - Bubble sort: useful to understand sorting, but very slow O(n^2)
   - Loop over the list until there are no more variables to swap
 - Insertion sort: useful for arrays that are already close to being sorted
+- Merge sort: typically the most useful algorithm because it is very dependable (preserves order of equivalent items)
