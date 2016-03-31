@@ -17,3 +17,4 @@
   - Loop over the list until there are no more variables to swap
 - Insertion sort: useful for arrays that are already close to being sorted
 - Merge sort: typically the most useful algorithm because it is very dependable (preserves order of equivalent items)
+- Quick sort: take pivot element and sort a greater-than-pivot and less-than-pivot list, recursively quick sorting down, and concatenating less-than + pivot + greater-than lists
