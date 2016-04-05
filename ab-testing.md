@@ -1,4 +1,4 @@
-* mountain testing - drastic variation from the current
+https://engineering.opendns.com/2015/01/14/scaling-ab-testing-netflix-com-node-js/
 
 ### test mapping
 ```javascript
@@ -30,4 +30,16 @@
   "deps": ["jquery", "newSearch.js"]
   "depsFull": ["jquery", "newSearchDep1.js", "newSearchDep2.js", "newSearch.js"]
 }
+"newSearch.js": {
+  "rule": "inNewSearch"
+  "deps": ...,
+  "depsFull": ...
+}
 ```
+- package: 
+  - get full dependency tree for requested package
+  - determine which files have rules
+  - run the rules, filtering out all dependencies that resolve to false
+  - filter out all subdeps from filtered out
+  - concatenate all the files, serve to the user
+- request: lookup defined registry that client requests from server, returning correct files
