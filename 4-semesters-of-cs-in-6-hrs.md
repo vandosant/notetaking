@@ -21,3 +21,4 @@
 
 ### Data Structures
 - Binary search tree: When you have ordered data and you want to search for nodes very quickly
+- AVL tree: Balanced BST; Keeps the tree as flat as possible; Implement recursively, balancing subtrees on the way out
