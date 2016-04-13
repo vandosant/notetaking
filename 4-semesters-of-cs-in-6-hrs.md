@@ -18,3 +18,6 @@
 - Insertion sort: useful for arrays that are already close to being sorted
 - Merge sort: typically the most useful algorithm because it is very dependable (preserves order of equivalent items)
 - Quick sort: take pivot element and sort a greater-than-pivot and less-than-pivot list, recursively quick sorting down, and concatenating less-than + pivot + greater-than lists
+
+### Data Structures
+- When you have ordered data and you want to search for nodes very quickly
