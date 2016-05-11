@@ -5,4 +5,4 @@
 - Flagged `node-debug app.js` + `node-inspector`
 
 #### Modules
-`module.exports`, yo
+`module.exports`
