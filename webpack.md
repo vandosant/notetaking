@@ -49,7 +49,7 @@ tracks import and export statements and knows which ones are never used,
 modules are removed when transpiled by uglify js
 
 webpack 2
-(look at gist)
+[gist](https://gist.github.com/sokra/27b24881210b56bbaff7?utm_source=javascriptweekly&utm_medium=email)
 es6 module syntax
 allow for:
 use tree shaking for css
