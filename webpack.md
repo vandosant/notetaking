@@ -70,3 +70,6 @@ don't do everything
 tips
 - do not abstract configs
 - webpack environment online
+
+es6
+http://www.2ality.com/2016/05/six-nifty-es6-tricks.html
