@@ -107,3 +107,14 @@ tree shaking
 - webpack removes the require for unused modules
 - uglify will remove the dead code
 - `"presets": [["es2015", {"modules": false}], "es2016", "stage-2"]`
+
+code splitting
+- load it when you need it
+- Use System.import syntax and load modules async
+- can make it dynamic and webpack includes all possibilities `"/components/" + componentName`
+
+chunking
+- commons chunk plugin
+- only invalidate browser cache when files change
+- set to run only ifProd, and removeIfEmpty from plugins array (webpack-config-utils)
+- set a chunkhash (html-webpack-plugin) for browser caching
