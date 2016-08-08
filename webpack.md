@@ -80,8 +80,8 @@ FEM
 
 webpack 2.1.0
 
-https://www.npmjs.com/package/webpack-validator
-https://webpack.github.io/docs/webpack-dev-server.html
+https://www.npmjs.com/package/webpack-validator  
+https://webpack.github.io/docs/webpack-dev-server.html  
 
 CSS Loader > JS > Style Loader (at runtime)
 https://github.com/webpack/style-loader
