@@ -118,3 +118,18 @@ chunking
 - only invalidate browser cache when files change
 - set to run only ifProd, and removeIfEmpty from plugins array (webpack-config-utils)
 - set a chunkhash (html-webpack-plugin) for browser caching
+
+caching
+- inline-manifest-webpack-plugin
+- set names for commons chunk plugin `names: ['vendor', 'manifest']`
+- use the webpackManifest in html (html-webpack-plugin)
+
+offline
+- offline-plugin
+- `import {install as offlineInstall} from 'offline-plugin/runtime'`
+- `offlineInstall()` if prod
+- `new webpack.DefinePlugin({
+    'process.env': {
+      NODE_ENV: ifProd('"production"', '"development"')
+    }
+  })`
