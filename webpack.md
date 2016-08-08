@@ -133,3 +133,8 @@ offline
       NODE_ENV: ifProd('"production"', '"development"')
     }
   })`
+
+deploy
+- `predeploy: 'npm run build'`
+- `deploy: './scripts/deploy'`
+- send dist directory up to a CDN
