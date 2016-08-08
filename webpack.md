@@ -78,7 +78,8 @@ http://www.2ality.com/2016/05/six-nifty-es6-tricks.html
 FEM
 ===
 
-https://github.com/kentcdodds/es6-todomvc/tree/FEM/01.1-debug-webpack  
+start: https://github.com/kentcdodds/es6-todomvc/tree/FEM/01.1-debug-webpack  
+end: https://github.com/kentcdodds/es6-todomvc/tree/FEM/07.1-deploy-surge  
 
 webpack 2.1.0
 
