@@ -73,3 +73,18 @@ tips
 
 es6
 http://www.2ality.com/2016/05/six-nifty-es6-tricks.html
+
+===
+FEM
+===
+
+webpack 2.1.0
+
+https://www.npmjs.com/package/webpack-validator
+https://webpack.github.io/docs/webpack-dev-server.html
+
+CSS Loader > JS > Style Loader (at runtime)
+https://github.com/webpack/style-loader
+
+- now loads css at bundle
+- can implement critical css for what you need. js for the rest.
