@@ -83,12 +83,27 @@ end: https://github.com/kentcdodds/es6-todomvc/tree/FEM/07.1-deploy-surge
 
 webpack 2.1.0
 
-https://www.npmjs.com/package/webpack-validator  
-https://github.com/kentcdodds/webpack-config-utils  
-https://webpack.github.io/docs/webpack-dev-server.html  
+config
+- https://www.npmjs.com/package/webpack-validator  
+- https://github.com/kentcdodds/webpack-config-utils  
+- https://webpack.github.io/docs/webpack-dev-server.html  
 
-CSS Loader > JS > Style Loader (at runtime)
-https://github.com/webpack/style-loader
-
+css
+- CSS Loader > JS > Style Loader (at runtime)
+- https://github.com/webpack/style-loader
 - now loads css at bundle
 - can implement critical css for what you need. js for the rest.
+
+testing
+- https://github.com/dtinth/babel-plugin-__coverage__
+- set cov plugin in babelrc under env.test
+- set the reporter to be used in karma (karma-coverage)
+- set webpack config noInfo to prevent output
+- specify check object for reporter
+
+tree shaking
+- set `modules: false` in babelrc in webpack 2
+- use es6 modules, not require/commonjs
+- webpack removes the require for unused modules
+- uglify will remove the dead code
+- `"presets": [["es2015", {"modules": false}], "es2016", "stage-2"]`
