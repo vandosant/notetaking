@@ -84,6 +84,7 @@ end: https://github.com/kentcdodds/es6-todomvc/tree/FEM/07.1-deploy-surge
 webpack 2.1.0
 
 https://www.npmjs.com/package/webpack-validator  
+https://github.com/kentcdodds/webpack-config-utils  
 https://webpack.github.io/docs/webpack-dev-server.html  
 
 CSS Loader > JS > Style Loader (at runtime)
