@@ -21,7 +21,8 @@ ex: https://github.com/kentcdodds/starwars-names [FEM branches]
 ## linting
 * eslint
 * ++scripts `"lint": "eslint src"`
-```{
+```json
+{
   "env": {
     "browser": true,
     "node": true,
@@ -31,7 +32,8 @@ ex: https://github.com/kentcdodds/starwars-names [FEM branches]
     "kentcdodds/possible-errors",
   ],
   "rules": {},
-}```
+}
+```
 
 ## coverage
 * nyc, with lcov reporter
@@ -41,8 +43,9 @@ ex: https://github.com/kentcdodds/starwars-names [FEM branches]
 ## validation
 * git hooks + ghooks tool
 * ++scripts `"validate": "npm-run-all --parallel test lint"`
-* ```  "config": {
+```json
+"config": {
     "ghooks": {
       "pre-commit": "npm run validate"
     }
-  }```
+}```
