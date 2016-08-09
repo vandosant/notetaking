@@ -48,4 +48,39 @@ ex: https://github.com/kentcdodds/starwars-names [FEM branches]
     "ghooks": {
       "pre-commit": "npm run validate"
     }
-}```
+}
+```
+
+## build + transpile
++    "babel-cli": "6.11.4",
++    "babel-preset-es2015": "6.9.0"
+```
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+```
+++ scripts:
+```
+    "prebuild": "rimraf dist",
+    "build": "babel --copy-files --out-dir dist --ignore *.test.js src",
+    "validate": "npm-run-all --parallel test lint build"
+```
+```
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ]
+```
+
+## dependencies
+* greenkeeper.io
+* david
+
+## packaging
+* gen zip:`npm pack`
+* `open [packagename]`
+* `require('./packagename')`
+* export default api
+* module.exports = api
