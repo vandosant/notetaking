@@ -28,8 +28,7 @@ ex: https://github.com/kentcdodds/starwars-names [FEM branches]
     "node": true,
   },
   "extends": [
-    "kentcdodds/best-practices",
-    "kentcdodds/possible-errors",
+    "eslint-config-[linter]",
   ],
   "rules": {},
 }
